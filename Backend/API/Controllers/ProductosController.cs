@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using ProductosAPI.DTOs;
 using ProductosAPI.Logs;
 using ProductosAPI.Services;
-//
+//un comentario
 namespace ProductosAPI.Controllers;
 
 [ApiController]
