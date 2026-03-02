@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using ProductosAPI.DTOs;
 using ProductosAPI.Logs;
 using ProductosAPI.Services;
-
+//
 namespace ProductosAPI.Controllers;
 
 [ApiController]
@@ -48,6 +48,7 @@ public class ProductosController : ControllerBase
 
         var created = await _service.CreateAsync(dto);
         return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+        //
     }
 
     // PUT /api/v1/productos/{id}
